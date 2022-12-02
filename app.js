@@ -52,3 +52,5 @@ app.get('/elements', (req, res) =>  {
 app.listen( port, () => {
     console.log(`example app listenniing at http://localhost:${port}`)
 } );
+
+module.exports = app;
