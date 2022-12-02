@@ -4,7 +4,7 @@ const hbs = require('hbs');
 
 
 const app = express()
-const port = 8080;
+const port = process.env.PORT;
 
 //handlerbars
 app.set('view engine', 'hbs');
