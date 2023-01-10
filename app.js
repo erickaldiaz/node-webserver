@@ -1,15 +1,16 @@
 require('dotenv').config();
 const express = require('express')
 const hbs = require('hbs');
+require('./hbs/helpers');
 
 
 const app = express()
 const port = process.env.PORT;
 
 //handlerbars
-app.set('view engine', 'hbs');
-hbs.registerPartials(__dirname + '/views/partials');
 
+hbs.registerPartials(__dirname + '/views/partials');
+app.set('view engine', 'hbs');
 
 
 //middlerware
